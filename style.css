@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+:root {
+  --bg-seconday: #f0efeb;
+  --app-bg: #40798c;
+  --hub-bg-: #9f7e69;
+  --grow-card: #f0efeb;
+}
+* {
+  font-family: "Poppins", sans-serif;
+}
+.btn-secondary {
+  background-color: var(--app-bg);
+}
+.btn-outline-secondary {
+  border-color: var(--app-bg);
+}
+.btn-secondary:hover,
+.btn-outline-secondary:hover {
+  background-color: var(--app-bg);
+}
+.banner-img {
+  width: 24px;
+  height: 24px;
+}
+.logo-img {
+  width: 40px;
+  height: 40px;
+}
+
+.customer {
+  background-color: var(--bg-seconday);
+}
+
+.grid-img {
+  width: 30px;
+  height: 30px;
+}
+
+.trans-gray {
+  position: relative;
+}
+.trans-gray::before,
+.trans-gray::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 20%;
+  height: 100%;
+  background: linear-gradient(90deg, #ffffff, #ffffff98);
+  filter: blur(7px);
+  z-index: 2;
+}
+.trans-gray::after {
+  right: 0;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.571), #ffffff);
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: fill;
+}
+.app {
+  background-color: var(--app-bg);
+}
+.hub {
+  background-color: var(--hub-bg-);
+}
+.grow-card {
+  background-color: var(--grow-card);
+}
+
+.link {
+  text-decoration: none;
+  color: #000;
+  text-transform: capitalize;
+  font-size: 1.1rem;
+}
+
+.absolute-btn {
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+}
