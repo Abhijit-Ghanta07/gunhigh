@@ -23,16 +23,21 @@
   </head>
   <body>
     <header class="">
-      <div class="container-fluid bg-black">
+      <div class="container-fluid bg-black" id="close-el">
         <div class="row py-1">
           <div
             class="col d-flex justify-content-center gap-2 align-items-center"
           >
             <img src="./assets/logowhite.png" alt="" class="banner-img" />
-            <p class="text-decoration-underline text-light mb-0">
+            <p
+              class="text-decoration-underline text-light mb-0 small"
+              id="title"
+            >
               Gunhigh AI Just Received A series of Funding From Investors
             </p>
-            <p class="ms-md-5 text-light mb-0"><i class="bx bx-x bx-md"></i></p>
+            <p class="ms-md-5 text-light mb-0" id="banner-close" type="button">
+              <i class="bx bx-x bx-md"></i>
+            </p>
           </div>
         </div>
       </div>
@@ -151,7 +156,7 @@
           </div>
         </div>
         <div class="row py-4">
-          <div class="col overflow-hidden">
+          <div class="col overflow-hidden p-0">
             <div
               class="d-flex trans-gray py-3 text-nowrap justify-content-between align-items-center gap-2"
             >
@@ -237,13 +242,14 @@
               src="./assets/grid1.jpg"
               class="h-100 overflow-hidden rounded-3"
               alt=""
+              style="filter: brightness(0.7)"
             />
             <p
-              class="position-absolute top-0 p-3 text-light fs-4 d-flex justify-content-between gap-5"
+              class="position-absolute top-0 p-3 text-light fs-6 fw-medium text-capitalize d-flex justify-content-between gap-5"
             >
               complete customer service packeage
 
-              <span>icon</span>
+              <span><i class="bx bx-right-top-arrow-circle bx-md"></i></span>
             </p>
             <button class="btn btn-secondary rounded-pill absolute-btn">
               Explore Solution
@@ -257,13 +263,14 @@
               src="./assets/grid1.jpg"
               class="h-100 overflow-hidden rounded-3"
               alt=""
+              style="filter: brightness(0.7)"
             />
             <p
-              class="position-absolute top-0 p-3 text-light fs-4 d-flex justify-content-between gap-5"
+              class="position-absolute top-0 p-3 text-light fs-6 fw-medium text-capitalize d-flex justify-content-between gap-5"
             >
               complete customer service packeage
 
-              <span>icon</span>
+              <span><i class="bx bx-right-top-arrow-circle bx-md"></i></span>
             </p>
             <button class="btn btn-secondary rounded-pill absolute-btn">
               Explore Solution
@@ -277,13 +284,14 @@
               src="./assets/grid1.jpg"
               class="h-100 overflow-hidden rounded-3"
               alt=""
+              style="filter: brightness(0.7)"
             />
             <p
-              class="position-absolute top-0 p-3 text-light fs-4 d-flex justify-content-between gap-5"
+              class="position-absolute top-0 p-3 text-light fs-6 fw-medium text-capitalize d-flex justify-content-between gap-5"
             >
               complete customer service packeage
 
-              <span>icon</span>
+              <span><i class="bx bx-right-top-arrow-circle bx-md"></i></span>
             </p>
             <button class="btn btn-secondary rounded-pill absolute-btn">
               Explore Solution
@@ -396,12 +404,12 @@
               Read Customer Case studies
             </p>
           </div>
-          <div class="col-md-5">
+          <div class="col-md-5 align-self-center">
             <img
-              src="./assets/avatar.jpg"
+              src="./assets/icons/increase2.png"
               alt=""
-              class="img-fluid w-100"
-              style="height: 8rem"
+              class=""
+              style="height: 95px; width: 95px"
             />
           </div>
         </div>
@@ -417,20 +425,183 @@
             <p class="small text-secondary">Lorem ipsum dolor sit amet.</p>
           </div>
         </div>
-        <div class="row gap-2 py-4 px-3">
-          <div class="col-md-8 app rounded-3 py-3 px-2">
-            <p>intergration with your favorite app</p>
-            <p>
+        <div class="row gap-4 py-4 px-3">
+          <div
+            class="col-md-8 app rounded-3 py-3 px-0 text-light overflow-hidden"
+          >
+            <p class="text-capitalize fs-5 fw-medium px-3">
+              intergration with your favorite app
+            </p>
+            <p class="small mb-0 pb-4 px-3">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Excepturi, ipsum?
             </p>
-            <div class="d-flex">
-              <p>banner-img</p>
+            <div class="d-flex text-nowrap gap-3 py-3" id="animate-x">
+              <div
+                class="d-flex gap-2 rounded-pill bg-white px-5 py-1 align-items-center text-black"
+              >
+                <img
+                  src="./assets/icons/shopify.png"
+                  alt=""
+                  class="intergrate-icon"
+                />
+                <p class="d-flex flex-column mb-0">
+                  <span class="fs-5 fw-medium">Shopify</span>
+                  <span class="small">Online Store</span>
+                </p>
+              </div>
+              <div
+                class="d-flex gap-2 rounded-pill bg-white px-5 py-1 align-items-center text-black"
+              >
+                <img
+                  src="./assets/icons/shopify.png"
+                  alt=""
+                  class="intergrate-icon"
+                />
+                <p class="d-flex flex-column mb-0">
+                  <span class="fs-5 fw-medium">Shopify</span>
+                  <span class="small">Online Store</span>
+                </p>
+              </div>
+              <div
+                class="d-flex gap-2 rounded-pill bg-white px-5 py-1 align-items-center text-black"
+              >
+                <img
+                  src="./assets/icons/shopify.png"
+                  alt=""
+                  class="intergrate-icon"
+                />
+                <p class="d-flex flex-column mb-0">
+                  <span class="fs-5 fw-medium">Shopify</span>
+                  <span class="small">Online Store</span>
+                </p>
+              </div>
+              <div
+                class="d-flex gap-2 rounded-pill bg-white px-5 py-1 align-items-center text-black"
+              >
+                <img
+                  src="./assets/icons/shopify.png"
+                  alt=""
+                  class="intergrate-icon"
+                />
+                <p class="d-flex flex-column mb-0">
+                  <span class="fs-5 fw-medium">Shopify</span>
+                  <span class="small">Online Store</span>
+                </p>
+              </div>
+              <div
+                class="d-flex gap-2 rounded-pill bg-white px-5 py-1 align-items-center text-black"
+              >
+                <img
+                  src="./assets/icons/shopify.png"
+                  alt=""
+                  class="intergrate-icon"
+                />
+                <p class="d-flex flex-column mb-0">
+                  <span class="fs-5 fw-medium">Shopify</span>
+                  <span class="small">Online Store</span>
+                </p>
+              </div>
+              <div
+                class="d-flex gap-2 rounded-pill bg-white px-5 py-1 align-items-center text-black"
+              >
+                <img
+                  src="./assets/icons/shopify.png"
+                  alt=""
+                  class="intergrate-icon"
+                />
+                <p class="d-flex flex-column mb-0">
+                  <span class="fs-5 fw-medium">Shopify</span>
+                  <span class="small">Online Store</span>
+                </p>
+              </div>
+            </div>
+            <div class="d-flex text-nowrap gap-3 py-3" id="animate-x">
+              <div
+                class="d-flex gap-2 rounded-pill bg-white px-5 py-1 align-items-center text-black"
+              >
+                <img
+                  src="./assets/icons/shopify.png"
+                  alt=""
+                  class="intergrate-icon"
+                />
+                <p class="d-flex flex-column mb-0">
+                  <span class="fs-5 fw-medium">Shopify</span>
+                  <span class="small">Online Store</span>
+                </p>
+              </div>
+              <div
+                class="d-flex gap-2 rounded-pill bg-white px-5 py-1 align-items-center text-black"
+              >
+                <img
+                  src="./assets/icons/shopify.png"
+                  alt=""
+                  class="intergrate-icon"
+                />
+                <p class="d-flex flex-column mb-0">
+                  <span class="fs-5 fw-medium">Shopify</span>
+                  <span class="small">Online Store</span>
+                </p>
+              </div>
+              <div
+                class="d-flex gap-2 rounded-pill bg-white px-5 py-1 align-items-center text-black"
+              >
+                <img
+                  src="./assets/icons/shopify.png"
+                  alt=""
+                  class="intergrate-icon"
+                />
+                <p class="d-flex flex-column mb-0">
+                  <span class="fs-5 fw-medium">Shopify</span>
+                  <span class="small">Online Store</span>
+                </p>
+              </div>
+              <div
+                class="d-flex gap-2 rounded-pill bg-white px-5 py-1 align-items-center text-black"
+              >
+                <img
+                  src="./assets/icons/shopify.png"
+                  alt=""
+                  class="intergrate-icon"
+                />
+                <p class="d-flex flex-column mb-0">
+                  <span class="fs-5 fw-medium">Shopify</span>
+                  <span class="small">Online Store</span>
+                </p>
+              </div>
+              <div
+                class="d-flex gap-2 rounded-pill bg-white px-5 py-1 align-items-center text-black"
+              >
+                <img
+                  src="./assets/icons/shopify.png"
+                  alt=""
+                  class="intergrate-icon"
+                />
+                <p class="d-flex flex-column mb-0">
+                  <span class="fs-5 fw-medium">Shopify</span>
+                  <span class="small">Online Store</span>
+                </p>
+              </div>
+              <div
+                class="d-flex gap-2 rounded-pill bg-white px-5 py-1 align-items-center text-black"
+              >
+                <img
+                  src="./assets/icons/shopify.png"
+                  alt=""
+                  class="intergrate-icon"
+                />
+                <p class="d-flex flex-column mb-0">
+                  <span class="fs-5 fw-medium">Shopify</span>
+                  <span class="small">Online Store</span>
+                </p>
+              </div>
             </div>
           </div>
-          <div class="col-md-3 hub rounded-3 py-3 px-2">
-            <p>Commerce Hub</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          <div class="col-md-3 hub rounded-3 py-3 px-2 text-light py-3 px-2">
+            <p class="fs-5 fw-medium">Commerce Hub</p>
+            <p class="small">
+              Lorem ipsum dolor sit amet consectetur adipisicing.
+            </p>
             <div class="d-flex">
               <p>trade img</p>
             </div>
@@ -442,7 +613,7 @@
       <div class="container-lg">
         <div class="row px-3">
           <div
-            class="col card grow-card py-sm-5 px-sm-5 p-4 text-center rounded-4"
+            class="col card grow-card py-sm-5 px-sm-5 p-2 text-center rounded-4"
           >
             <p class="display-6 fw-bold text-capitalize">
               Grow better with gunhigh Today
